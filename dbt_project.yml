@@ -1,0 +1,11 @@
+name: 'smart_waterflow_project'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ['models']
+
+models:
+  smart_waterflow_project:
+    +materialized: view

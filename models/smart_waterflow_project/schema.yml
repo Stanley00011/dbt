@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_meter_readings
+    description: "Cleaned water meter data from raw_meter_readings"

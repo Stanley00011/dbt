@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: smart_waterflow
+    schema: smart_waterflow
+    tables:
+      - name: raw_meter_readings
