@@ -109,7 +109,7 @@ Easily extensible to integrate with real-time IoT sensor networks, utility APIs,
 
 Designed with a strong focus on data pipeline reliability, observability, and anomaly detection logic.
 
-Author
+#### Author
 Olajide Ajao
 Data Analyst & Aspiring Data Engineer
 Passionate about smart infrastructure, analytics, and urban resilience
