@@ -1,6 +1,6 @@
 # SmartWaterFlow: Real-Time Anomaly Detection for Urban Water Infrastructure
 
-SmartWaterFlow is an end-to-end data engineering pipeline that simulates and processes smart meter data to detect critical events in urban water systems — such as leaks, pressure anomalies, and meter outages — in real-time.
+SmartWaterFlow is an end-to-end data engineering pipeline that simulates and processes smart meter data to detect critical events in urban water systems, such as leaks, pressure anomalies, and meter outages, in real time.
 
 Built using modern data tools including **BigQuery**, **dbt**, and **Looker Studio**, this project showcases how scalable, cloud-native data infrastructure can support smarter and more sustainable cities.
 
@@ -13,7 +13,7 @@ Water infrastructure is one of the most critical yet under-monitored utilities i
 - Simulating water meter data (flow rate, pressure, and location)
 - Processing and transforming it with modern data stack best practices
 - Detecting anomalies that may indicate leaks, outages, or pressure spikes
-- Visualizing trends and issues on a real-time, interactive dashboard
+- Visualising trends and issues on a real-time, interactive dashboard
 
 This system is designed to be easily extendable to:
 - IoT/edge sensor networks
@@ -82,22 +82,7 @@ Create operational dashboards for immediate insight
 
 Enable proactive maintenance and smarter urban systems
 
-### Repository Structure
-
-smartwaterflow-pipeline/
-├── dbt_project.yml
-├── models/
-│   └── smart_waterflow_project/
-│       ├── stg_meter_readings.sql
-│       ├── int_flow_summary.sql
-│       ├── mart_anomalies.sql
-│       ├── mart_anomalies_with_location.sql
-│       ├── schema.yml
-│       └── sources.yml
-├── data_simulation/
-│   └── simulate_meter_data.py   
-
-
+<pre> ```bash smartwaterflow-pipeline/ ├── dbt_project.yml ├── models/ │ └── smart_waterflow_project/ │ ├── stg_meter_readings.sql │ ├── int_flow_summary.sql │ ├── mart_anomalies.sql │ ├── mart_anomalies_with_location.sql │ ├── schema.yml │ └── sources.yml ├── data_simulation/ │ └── simulate_meter_data.py ``` </pre>
 Notes
 
 The dataset is simulated to resemble smart water meter output, with geolocation centered near Lagos, Nigeria.
