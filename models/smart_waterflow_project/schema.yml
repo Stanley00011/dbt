@@ -2,4 +2,40 @@ version: 2
 
 models:
   - name: stg_meter_readings
-    description: "Cleaned water meter data from raw_meter_readings"
+    description: "Staging layer with deduplicated and cleaned smart meter readings."
+    columns:
+      - name: meter_id
+        tests:
+          - not_null
+      - name: timestamp
+        tests:
+          - not_null
+      - name: flow_lmin
+        tests:
+          - not_null
+      - name: pressure_psi
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
+    tests:
+      - unique:
+          column_name: meter_id || '-' || cast(timestamp as string)
+
+  - name: dim_meters
+    description: "Dimension table containing the latest known static info per meter."
+    columns:
+      - name: meter_id
+        tests:
+          - not_null
+          - unique
+      - name: district
+        tests:
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
