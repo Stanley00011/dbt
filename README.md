@@ -82,8 +82,24 @@ Create operational dashboards for immediate insight
 
 Enable proactive maintenance and smarter urban systems
 
-<pre> ```bash smartwaterflow-pipeline/ ├── dbt_project.yml ├── models/ │ └── smart_waterflow_project/ │ ├── stg_meter_readings.sql │ ├── int_flow_summary.sql │ ├── mart_anomalies.sql │ ├── mart_anomalies_with_location.sql │ ├── schema.yml │ └── sources.yml ├── data_simulation/ │ └── simulate_meter_data.py ``` </pre>
-Notes
+### Repository Structure
+
+```bash
+smartwaterflow-pipeline/
+├── dbt_project.yml
+├── models/
+│   └── smart_waterflow_project/
+│       ├── stg_meter_readings.sql
+│       ├── int_flow_summary.sql
+│       ├── mart_anomalies.sql
+│       ├── mart_anomalies_with_location.sql
+│       ├── schema.yml
+│       └── sources.yml
+├── data_simulation/
+│   └── simulate_meter_data.py
+```
+
+### Notes
 
 The dataset is simulated to resemble smart water meter output, with geolocation centered near Lagos, Nigeria.
 
