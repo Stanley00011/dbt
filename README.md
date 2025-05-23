@@ -1,4 +1,4 @@
-# SmartWaterFlow: Anomaly Detection for Urban Water Infrastructure
+# SmartWaterFlow: Anomaly Detection Pipeline for Urban Infrastructure 	
 
 SmartWaterFlow is an end-to-end data engineering pipeline that simulates and analyses smart water meter data to detect leaks, pressure anomalies, and outages, delivering insights that support scalable, sustainable urban water systems.
 
