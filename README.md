@@ -100,7 +100,7 @@ smartwaterflow-pipeline/
 │       ├── schema.yml
 │       └── sources.yml
 ├── data_simulation/
-│   └── simulate_meter_data.py
+│   └── smart_waterflow_data_simulation.ipynb
 
 ```
 
